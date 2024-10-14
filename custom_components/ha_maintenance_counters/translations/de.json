@@ -1,0 +1,43 @@
+{
+    "title": "Wartungszähler",
+    "config": {
+        "step": {
+            "user": {
+                "description": "Für welchen Gerätetyp soll ein Zähler eingefügt werden?",
+                "menu_options": {
+                    "light": "Licht"
+                }
+            },
+            "light": {
+                "description": "Für welches Gerät sollen die ersetzten Lampen gezählt werden?",
+                "data": {
+                    "device_id": "Gerät"
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "bulb_replaced": {
+                "name": "Leuchtmittel ersetzt"
+            }
+        },
+        "sensor": {
+            "num_replaced_lights": {
+                "name": "Ersetzte Leuchtmittel"
+            }
+        }
+    },
+    "services": {
+        "set_num_replaced_lights": {
+            "name": "Ersetzte Leuchtmittel ändern",
+            "description": "Ändert die Anzahl ersetzter Leuchtmittel.",
+            "fields": {
+                "num_replaced_lights": {
+                    "name": "Ersetzte Leuchtmittel",
+                    "description": "Die Anzahl tatsächlich ersetzter Leuchtmittel."
+                }
+            }
+        }
+    }
+}

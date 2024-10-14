@@ -1,0 +1,43 @@
+{
+    "title": "Maintenance counters",
+    "config": {
+        "step": {
+            "user": {
+                "description": "For which type of device do you want to add a counter?",
+                "menu_options": {
+                    "light": "Light"
+                }
+            },
+            "light": {
+                "description": "For which device do you want to track the replaced light bulbs?",
+                "data": {
+                    "device_id": "Device"
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "bulb_replaced": {
+                "name": "light bulb replaced"
+            }
+        },
+        "sensor": {
+            "num_replaced_lights": {
+                "name": "replaced light bulbs"
+            }
+        }
+    },
+    "services": {
+        "set_num_replaced_lights": {
+            "name": "Change the number of replaced light bulbs",
+            "description": "Changes the number of replaced lightbulbs",
+            "fields": {
+                "num_replaced_lights": {
+                    "name": "Replaced light bulbs",
+                    "description": "The number of light bulbs that were actually replaced."
+                }
+            }
+        }
+    }
+}

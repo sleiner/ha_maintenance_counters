@@ -1,0 +1,17 @@
+{
+  "domain": "ha_maintenance_counters",
+  "name": "Maintenance counters",
+  "codeowners": [
+    "@sleiner"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "recorder"
+  ],
+  "documentation": "https://github.com/sleiner/ha_maintenance_counters",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/sleiner/ha_maintenance_counters/issues",
+  "loggers": [],
+  "requirements": [],
+  "version": "0.1.0"
+}

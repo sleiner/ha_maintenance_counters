@@ -1,0 +1,23 @@
+[project]
+name = "ha_maintenance_counters"
+version = "0.1.0"
+description = "Custom Home Assistant integration for tracking maintenance work."
+authors = [{ name = "Simon Leiner", email = "simon@leiner.me" }]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = []
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.uv]
+dev-dependencies = [
+    "homeassistant==2024.10.2",
+    "pytest>=8.3.3",
+    "ruff>=0.6.5",
+]
+
+[tool.pdm.build]
+package-dir = "custom_components"

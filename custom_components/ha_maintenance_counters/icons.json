@@ -1,0 +1,7 @@
+{
+    "services": {
+        "set_num_replaced_lights": {
+            "service": "mdi:autorenew"
+        }
+    }
+}

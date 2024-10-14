@@ -1,0 +1,15 @@
+set_num_replaced_lights:
+    target:
+        entity:
+            integration: ha_maintenance_counters
+            domain: sensor
+    fields:
+        num_replaced_lights:
+            required: true
+            example: 2
+            default: 1
+            selector:
+                number:
+                    min: 0
+                    max: 100000
+                    mode: box
