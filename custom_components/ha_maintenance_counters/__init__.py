@@ -24,7 +24,7 @@ if TYPE_CHECKING:
 
     from .data import ReplacedLightsConfigEntry
 
-CONFIG_SCHEMA = cv.config_entry_only_config_schema
+CONFIG_SCHEMA = cv.config_entry_only_config_schema(DOMAIN)
 
 PLATFORMS: list[Platform] = [
     Platform.BUTTON,
